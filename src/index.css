@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* Our custom design tokens. In Tailwind v4 we define colors/fonts here
+   instead of tailwind.config.js, then use them like normal utility
+   classes: bg-espresso, text-copper, font-display, etc. */
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-espresso: #2b1d14;
+  --color-espresso-light: #4a3626;
+  --color-oat: #ede4d3;
+  --color-sage: #6b7a5e;
+  --color-copper: #b5651d;
+  --color-ivory: #faf6ee;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-ivory);
+  color: var(--color-espresso);
+}
